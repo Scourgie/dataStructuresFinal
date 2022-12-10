@@ -1,0 +1,2909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>5</pointsize>
+     </font>
+    </property>
+    <widget class="QWidget" name="mainMenu">
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>781</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>26</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>The Animal Information Storage Solution</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewPetInfoBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortPetAescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Ascending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortPetDescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>200</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Descending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewQuarantineBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>250</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortQueAescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>320</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Ascending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortQueDescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>370</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Descending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addPetBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>420</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add New Pet Info</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="movePetBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>490</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Move Pet from Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removePetBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>540</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove Pet </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="savePetsPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>390</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Pets (Pet Info)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loadPetsPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>440</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Load Pets (Pet Info)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loadPetsQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>540</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Load Pets (Quarantine)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="savePetsQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>490</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save Pets (Quarantine)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="petInfo">
+     <widget class="QListWidget" name="petInfoList">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="piAescBtn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort In Ascending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="piDescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Descending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="piReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pet Information</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="quarantine">
+     <widget class="QPushButton" name="queAescBtn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Ascending</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="queReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="queDescBtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>500</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sort in Descending</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="quarantineList">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPets">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>761</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>26</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>What Type of Animal to Add?</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addAmphBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Amphibian</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addBirdBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addFishBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>210</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addMammalBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addReptileBtn">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>330</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>390</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPetsAmphibian">
+     <widget class="QLabel" name="amFamilyLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Amphibian Family:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amFamilyTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Frog or Toad</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amSpeciesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Tree Frog or American Bullfrog</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amNameTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Spots or Sparky</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amAgeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 2</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Green or Yellow</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amEyeColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Black or Blue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amSpeciesLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Amphibian Species:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Name of Amphibian:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amAgeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Amphibian Age:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Amphibian Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amEyeColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Amphibian Eye Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amNoctLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nocturnal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amTailLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Amphibian Tail:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amNoctTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="amTailTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subAmphToQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subAmphToPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="amReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPetsBird">
+     <widget class="QTextEdit" name="birdFamilyTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Duck or Goose</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdSpeciesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Show Goose or Emperor Goose</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdNameTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Aria or Brindle</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdAgeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 2</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: White and Black or Blue and Black</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdEyeColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Brown or Blue</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdNoctTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="birdBeakColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Black or Brown</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdFamilyLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Family:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdSpeciesLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Species:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name of Bird:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdAgeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Age:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdEyeColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Eye Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdNoctLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nocturnal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="birdBeakColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bird Beak Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subBirdToQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subBirdToPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="birdReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPetsFish">
+     <widget class="QTextEdit" name="fishFamilyTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Salmon or Sturgeon</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishSpeciesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Atlantic Salmon or Pink Salmon</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishNameTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Snowy or Salem</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishAgeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 2</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Orange or White</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishEyeColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Green or Blue</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishNoctTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fishWaterTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Saltwater or Freshwater</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishFamilyLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish Family:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishSpeciesLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish Species:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name of Fish:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishAgeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish Age:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishEyeColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fish Eye Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishNoctLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nocturnal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fishWaterLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Type of Water:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subFishToQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subFishToPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fishReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPetsMammal">
+     <widget class="QTextEdit" name="mamFamilyTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Cat or Dog</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamSpeciesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: British Shorthair or Pitbull</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamNameTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Sparky or Spots</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamAgeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 2</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Pink or Tan</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamEyeColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Blue or Green</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamNoctTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="mamFurColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Black or Grey and White</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamFamilyLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Family:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamSpeciesLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Species:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name of Mammal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamAgeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Age:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Skin Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamEyeColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Eye Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamNoctLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nocturnal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mamFurColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mammal Fur Color</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subMamToQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subMamToPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mamReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addPetsReptile">
+     <widget class="QTextEdit" name="repFamilyTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Snake or Gecko</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repSpeciesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Corn Snake or Ball Python</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repNameTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Rusty or Jynx</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repAgeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 2</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Red or Brown</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repEyeColorTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Blue or Green</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repNoctTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Yes or No</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="repTongueTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: Forked or Normal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repFamilyLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Family:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repSpeciesLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Species:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name of Reptile:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repAgeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Age:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repEyeColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Eye Color:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repNoctLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nocturnal:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="repTongueLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reptile Tongue:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subRepToQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subRepToPiBtn">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="repReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="movePets">
+     <widget class="QListWidget" name="quarantineList_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="moveSubmitBtn">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>510</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Move First Pet from Quarantine to Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="moveReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>510</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quarantine</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="removePets">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>761</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Where would you like to remove a pet from?</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removePiBtn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>80</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove from Pet Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removeQueBtn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>140</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove from Quarantine</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="removePetInfo">
+     <widget class="QListWidget" name="petInfoList_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="submitPiRemoveBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>490</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Submit Removal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removePiReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>530</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="removePiTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>520</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Ex: 1 or 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="removePiLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Index Number of Pet to Remove from Pet Information</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pet Information</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="removeQuarantine">
+     <widget class="QListWidget" name="quarantineList_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="submitQueRemoveBtn">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>510</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remove First Pet from Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removeQueReturnBtn">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>510</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Return to Main Menu</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Modern No. 20</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quarantine</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
